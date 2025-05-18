@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  
   // Обработчик навигации
   navItems.forEach(item => {
     item.addEventListener('click', function(e) {
