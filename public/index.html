@@ -1,37 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>last.fm - Music</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Верхняя черная полоса -->
+  <header class="top-header">
+    <div class="header-content">
+      <div class="player-icons">
+        <span class="player-icon">▶</span>
+        <span class="player-icon">⏸</span>
+        <span class="player-icon">⏹</span>
+      </div>
+      <div class="logo">last.fm</div>
+      <nav class="main-nav">
+        <a href="search.html" class="nav-icon">🔍</a>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Live</a>
+        <a href="#" class="nav-link">Music</a>
+        <a href="#" class="nav-link">Charts</a>
+        <a href="#" class="nav-link">Events</a>
+      </nav>
+    </div>
+  </header>
+   <!-- Основное содержимое -->
+  <main class="main-content">
+    <h1 class="main-title">Music</h1>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section class="hot-section">
+      <h2 class="section-title">Hot right now</h2>
+      <div class="red-line"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <div class="artists-grid">
+        <!-- 8 кружков с артистами -->
+        <div class="artist-item">
+          <img src="images/drake.jpg" alt="Drake" class="artist-circle">
+          <p class="artist-name">Drake</p>
+          <p class="artist-genre">hip-hop \ rap \ rnb</p>
+        </div>
+                <div class="artist-item">
+          <img src="images/jhope.webp" alt="J-hope" class="artist-circle">
+          <p class="artist-name">j-hope</p>
+          <p class="artist-genre">k-pop \ hip-hop \ korean</p>
+        </div>
+                <div class="artist-item">
+          <img src="images/joji.jpg" alt="Joji" class="artist-circle">
+          <p class="artist-name">Joji</p>
+          <p class="artist-genre">lo-fi \ rnb \ hip-hop</p>
+        </div>
+                <div class="artist-item">
+          <img src="images/Kanye-West.webp" alt="Kanye West" class="artist-circle">
+          <p class="artist-name">Kanye West</p>
+          <p class="artist-genre">hip-hop \ rap \ hip hop</p>
+        </div>
+                <div class="artist-item">
+          <img src="images/lanadelrey.jpg" alt="LanaDelRey" class="artist-circle">
+          <p class="artist-name">Lana Del Rey</p>
+          <p class="artist-genre">indie \ pop \ female vocalists</p>
+        </div>
+                <div class="artist-item">
+          <img src="images/mitski.jpg" alt="Mitski" class="artist-circle">
+          <p class="artist-name">Mitski</p>
+          <p class="artist-genre">indie rock \ indie \ indie pop</p>
+        </div>
+                <div class="artist-item">
+          <img src="images/theweekend.jpg" alt="TheWeeknd" class="artist-circle">
+          <p class="artist-name">The Weeknd</p>
+          <p class="artist-genre">rnb \ electronic \ canadian</p>
+        </div>
+                <div class="artist-item">
+          <img src="images/playboicart.webp" alt="PlayBoi" class="artist-circle">
+          <p class="artist-name">Playboi Carti</p>
+          <p class="artist-genre">trap \ hip-hop \ cloud rap</p>
+        </div>
+                        <div class="artist-item">
+          <img src="images/ocean-frank.jpg" alt="Frank Ocean" class="artist-circle">
+          <p class="artist-name">Franc Ocean</p>
+          <p class="artist-genre">hip-hop \ rnb \ soul</p>
+        </div>
+                        <div class="artist-item">
+          <img src="images/kendricklamar.webp" alt="Kendrick lamar" class="artist-circle">
+          <p class="artist-name">Kendrick Lamar</p>
+          <p class="artist-genre">hip-hop \ rap \ hip hop</p>
+        </div>
+                        <div class="artist-item">
+          <img src="images/steve lacy.jpg" alt="Steve Lacy" class="artist-circle">
+          <p class="artist-name">Steve Lacy</p>
+          <p class="artist-genre">free jazz \ jazz \ saxophone</p>
+        </div>
+                                <div class="artist-item">
+          <img src="images/taylor-swift.avif" alt="Taylor Swift" class="artist-circle">
+          <p class="artist-name">Taylor Swift</p>
+          <p class="artist-genre">pop \ country \ female vocalists</p>
+        </div>
+        <!-- Повторить 7 раз -->
+      </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <section class="tracks-section">
+      <h2 class="section-title">Popular tracks</h2>
+      <div class="red-line"></div>
+
+      <div class="tracks-grid">
+        <!-- 12 треков (3 колонки по 4) -->
+        <div class="track-item">
+          <img src="images/sexynukim.jpg" alt="Sexy Nukim" class="track-square">
+          <div class="track-info">
+            <p class="track-title">SEXY NUKIM (feat. RM of BTS)</p>
+            <p class="artist-name">Balming Tiger</p>
+            <p class="track-plays">rap \ hip-hop \ alternative</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/more.jpg" alt="MORE" class="track-square">
+          <div class="track-info">
+            <p class="track-title">MORE</p>
+            <p class="artist-name">j-hope</p>
+            <p class="track-plays">rap \ hip-hop \ rock</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/yettocome.jpg" alt="yet to come" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Yet to Come</p>
+            <p class="artist-name">BTS</p>
+            <p class="track-plays">k-pop \ bts \ korean</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/baddecisions.jpg" alt="bad decisions" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Bad Decisions (with BTS & Snoop Dogg))</p>
+            <p class="artist-name">Benny Bianco</p>
+            <p class="track-plays">bts \ korean \ snoop dogg</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/leftandright.jpg" alt="left and right" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Left and Right (feat. Jung Kook of BTS)</p>
+            <p class="artist-name">Charlie Puth</p>
+            <p class="track-plays">pop \ jungkook \ 2022</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/Pink_Venom.webp" alt="pink venom" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Pink Venom</p>
+            <p class="artist-name">BLACKPINK</p>
+            <p class="track-plays">k-pop \ hip-hop</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/afterlike.png" alt="after like" class="track-square">
+          <div class="track-info">
+            <p class="track-title">After LIKE</p>
+            <p class="artist-name">IVE</p>
+            <p class="track-plays">k-pop \ disco \ soty</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/talkthattalk.jpg" alt="Talk that talk" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Talk that Talk</p>
+            <p class="artist-name">TWICE</p>
+            <p class="track-plays">k-pop \ korean \ kpop</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/hypeboy.png" alt="Hype boy" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Hype Boy</p>
+            <p class="artist-name">NewJeans</p>
+            <p class="track-plays">k-pop \ kpop \ soty</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/badhabit.jpg" alt="bad habit" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Bad Habit</p>
+            <p class="artist-name">Steve Lacy</p>
+            <p class="track-plays">indie \ sexual \ bedroom pop</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/talk.png" alt="Talk" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Talk</p>
+            <p class="artist-name">Yeat</p>
+            <p class="track-plays">trap \ twizzy \ rap</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/stayalive.jpg" alt="Stay Alive" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Stay Alive (Prod. SUGA of BTS)</p>
+            <p class="artist-name">Jung Kook</p>
+            <p class="track-plays">jungkook \ bts \ ost</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/romantichomicide.jpg" alt="romantic homicide"" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Romantic Homicide</p>
+            <p class="artist-name">d4vd</p>
+            <p class="track-plays">indie</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/Super_Freaky_Girl.png" alt="super girl" class="track-square">
+          <div class="track-info">
+            <p class="track-title">Super Freaky Girl</p>
+            <p class="artist-name">Nicki Minaj</p>
+            <p class="track-plays">rap \ hip-hop \ hip hop</p>
+          </div>
+        </div>
+                <div class="track-item">
+          <img src="images/yours.jpg" alt="yours" class="track-square">
+          <div class="track-info">
+            <p class="track-title">YOURS</p>
+            <p class="artist-name">Jin</p>
+            <p class="track-plays">ost \ ballad \ kpop</p>
+          </div>
+        </div>
+        <!-- Повторить 11 раз -->
+      </div>
+    </section>
+  </main>
+   <!-- Нижняя черная полоса -->
+  <footer class="bottom-footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="column-title">COMPANY</p>
+        <a href="#" class="footer-link">About Last.fm</a>
+        <a href="#" class="footer-link">Contact Us</a>
+        <a href="#" class="footer-link">Jobs</a>
+      </div>
+        <div class="footer-column">
+        <p class="column-title">HELP</p>
+        <a href="#" class="footer-link">Track My music</a>
+        <a href="#" class="footer-link">Community Support</a>
+        <a href="#" class="footer-link">Help</a>
+      </div>
+        <div class="footer-column">
+        <p class="column-title">GOODIES</p>
+        <a href="#" class="footer-link">Download Scrobbler</a>
+        <a href="#" class="footer-link">Developer API</a>
+        <a href="#" class="footer-link">Free Music Downloads</a>
+      </div>
+        <div class="footer-column">
+        <p class="column-title">ACCOUNT</p>
+        <a href="#" class="footer-link">Inbox</a>
+        <a href="#" class="footer-link">Settings</a>
+        <a href="#" class="footer-link">Logout</a>
+      </div>
+        <div class="footer-column">
+        <p class="column-title">FOLLOW US</p>
+        <a href="#" class="footer-link">Facebook</a>
+        <a href="#" class="footer-link">X</a>
+        <a href="#" class="footer-link">Instagram</a>
+      </div>
+      <!-- Еще 4 колонки -->
+    </div>
+  </footer>
+</body>
 </html>
