@@ -1,0 +1,15 @@
+.track-item {
+  transition: background-color 0.2s;
+}
+
+.track-item:hover {
+  background-color: #f5f5f5;
+}
+
+.track-name {
+  transition: color 0.2s;
+}
+
+.track-item:hover .track-name {
+  color: #d51007;
+}
