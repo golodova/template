@@ -104,27 +104,28 @@ export default function SearchPage() {
         );
       
       case 'tracks':
-        return (
-          <section className="results-section">
-            <h2>Tracks</h2>
-            {results.tracks.length > 0 ? (
-              <div className="tracks-list">
-                {results.tracks.map(track => (
-                  <TrackItem
-                    key={track.mbid || `${track.name}-${track.artist}`}
-                    track={{ 
-                      ...track, 
-                      durationFormatted: formatDuration(track.duration) 
-                    }}
-                    showDetails
-                  />
-                ))}
-              </div>
-            ) : (
-              <div className="no-results">No tracks found</div>
-            )}
-          </section>
-        );
+// В функции renderResults, в case 'tracks':
+return (
+  <section className="results-section">
+    <h2>Tracks</h2>
+    {results.tracks.length > 0 ? (
+      <div className="tracks-list">
+        {results.tracks.map(track => (
+          <TrackItem
+            key={track.mbid || `${track.name}-${track.artist}`}
+            track={{ 
+              ...track, 
+              durationFormatted: formatDuration(track.duration) 
+            }}
+            variant="search"
+          />
+        ))}
+      </div>
+    ) : (
+      <div className="no-results">No tracks found</div>
+    )}
+  </section>
+);
       
       default:
         return null;

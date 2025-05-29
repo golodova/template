@@ -1,6 +1,6 @@
 .main-content {
   max-width: 1200px;
-  margin: 120px auto 0; /* Увеличили отступ сверху с 80px до 120px */
+  margin: 120px auto 10; /* Увеличили отступ сверху с 80px до 120px */
   padding: 20px;
   min-height: calc(100vh - 200px); /* Добавим минимальную высоту */
 }
@@ -15,6 +15,7 @@
 
 .search-input {
   flex: 1;
+  margin-top: 40px;
   padding: 12px 15px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -23,6 +24,7 @@
 
 .search-button {
   padding: 0 25px;
+  margin-top: 40px;
   background-color: #d51007;
   color: white;
   border: none;

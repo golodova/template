@@ -1,0 +1,132 @@
+
+
+.music-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.music-content {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 60px auto 60px;
+  padding: 0 20px;
+}
+
+.music-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.music-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.music-header h2 {
+  font-size: 18px;
+  color: #d51007;
+  font-weight: normal;
+}
+
+.tags-section {
+  margin-top: 20px;
+}
+
+.tags-section h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.red-line {
+  height: 3px;
+  background-color: #d51007;
+  width: 200px;
+  margin: 0 auto 40px;
+}
+
+.tag-block {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.tag-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.main-tag {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+  aspect-ratio: 1/1;
+}
+
+.main-tag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.side-tags {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.small-tag {
+  position: relative;
+  width: 100%; /* или фиксированная ширина */
+  height: 100%; /* или фиксированная высота */
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  aspect-ratio: 1/1;
+}
+
+.small-tag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* важно для корректного отображения */
+  display: block; /* убирает лишние отступы */
+  transition: transform 0.3s;
+}
+
+.tag-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.tag-overlay span {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+.main-tag:hover img,
+.small-tag:hover img {
+  transform: scale(1.05);
+}
+
+.main-tag:hover .tag-overlay,
+.small-tag:hover .tag-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  padding-bottom: 30px;
+}
+

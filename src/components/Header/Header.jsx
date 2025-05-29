@@ -7,22 +7,20 @@ export default function Header() {
   return (
     <header className="top-header">
       <div className="header-content">
-        <div className="player-icons">
-          <span className="player-icon">▶</span>
-          <span className="player-icon">⏸</span>
-          <span className="player-icon">⏹</span>
+         <div className="player-icons">
+          <span className="player-icon play-icon"></span>
+          <span className="player-icon pause-icon"></span>
+          <span className="player-icon stop-icon"></span>
         </div>
         <div className="logo">last.fm</div>
         <nav className="main-nav">
           <span 
-            className="nav-icon"
+            className="nav-icon search-icon"
             onClick={() => navigate('/search')}
-          >
-            🔍
-          </span>
+          ></span>
           <a href="/" className="nav-link">Home</a>
-          <a href="https://www.last.fm/music" className="nav-link">Music</a>
-        </nav>
+         <span className="nav-link" onClick={() => navigate('/music')}>Music</span>
+     </nav>
       </div>
     </header>
   );

@@ -1,9 +1,14 @@
 const API_KEY = 'dc08979bf5f907d92ed624ad7e31df4c';
 const BASE_URL = 'https://ws.audioscrobbler.com/2.0/';
-const DEFAULT_IMAGE = 'https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png';
+//const DEFAULT_IMAGE = 'https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png';
 
+const DEFAULT_IMAGE ='../../assets/images/default_image.png';
 // Функция для получения лучшего доступного изображения
-function getBestImageUrl(images) {
+ //Здесь мы пытаемся получить изображение по api
+ //все картинки это просто картинки-заглушки, потому что api возвращает их,
+ //а не реальные картинки
+ // если  api не возвращает данные об изображении или оно не найдено, вставляется дефолтная картинкаю
+function getBestImageUrl(images) { 
   if (!Array.isArray(images)) return DEFAULT_IMAGE;
   const sizes = ['extralarge', 'large', 'medium', 'small'];
   for (const size of sizes) {

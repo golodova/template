@@ -3,10 +3,12 @@
   margin: 15px;
 }
 
+
 .artist-circle-container {
   width: 150px;
   height: 150px;
   margin: 0 auto 15px;
+  transition: transform 0.3s; 
 }
 
 .artist-circle {
@@ -18,8 +20,17 @@
   transition: transform 0.3s;
 }
 
-.artist-circle:hover {
-  transform: scale(1.05);
+.artist-name, 
+.artist-listeners {
+  transition: all 0.3s; /* Унифицированное время анимации */
+}
+
+
+
+/* Общие стили при наведении на карточку */
+.artist-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .artist-name {
@@ -37,18 +48,31 @@
 }
 
 .artist-item {
+  text-align: center;
+  margin: 15px;
   transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.artist-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .artist-name {
   transition: color 0.2s;
 }
 
-.artist-item:hover .artist-name {
+.artist-item:hover .artist-circle-container,
+.artist-item:hover .artist-circle,
+.artist-item:hover .artist-name,
+.artist-item:hover .artist-listeners {
+  transform: scale(0.95); /* Одинаковый масштаб уменьшения */
+}
+
+.artist-item:hover .artist-name,
+.artist-item:hover .artist-listeners {
   color: #d51007;
 }
+
+.artist-listeners {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0 0;
+  transition: all 0.2s; 
+}
+
