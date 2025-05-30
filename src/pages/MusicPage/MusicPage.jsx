@@ -1,4 +1,4 @@
-// src/pages/MusicPage/MusicPage.jsx
+
 import { useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
