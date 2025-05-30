@@ -1,0 +1,78 @@
+.artist-item {
+  text-align: center;
+  margin: 15px;
+}
+
+
+.artist-circle-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  transition: transform 0.3s; 
+}
+
+.artist-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  transition: transform 0.3s;
+}
+
+.artist-name, 
+.artist-listeners {
+  transition: all 0.3s; /* Унифицированное время анимации */
+}
+
+
+
+/* Общие стили при наведении на карточку */
+.artist-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artist-name {
+  font-weight: bold;
+  margin: 5px 0;
+  color: #000; /* Добавляем темно-серый цвет вместо белого */
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.artist-genre {
+  color: #888;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.artist-item {
+  text-align: center;
+  margin: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.artist-name {
+  transition: color 0.2s;
+}
+
+.artist-item:hover .artist-circle-container,
+.artist-item:hover .artist-circle,
+.artist-item:hover .artist-name,
+.artist-item:hover .artist-listeners {
+  transform: scale(0.95); /* Одинаковый масштаб уменьшения */
+}
+
+.artist-item:hover .artist-name,
+.artist-item:hover .artist-listeners {
+  color: #d51007;
+}
+
+.artist-listeners {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0 0;
+  transition: all 0.2s; 
+}
+

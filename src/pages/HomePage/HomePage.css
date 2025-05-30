@@ -1,0 +1,37 @@
+.main-content {
+  max-width: 1200px;
+  margin: 120px auto 10; /* Увеличили отступ сверху с 80px до 120px */
+  padding: 20px;
+  min-height: calc(100vh - 200px); /* Добавим минимальную высоту */
+}
+
+.hot-section {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.red-line {
+  height: 3px;
+  background-color: #d51007;
+  width: 150px;
+  margin: 0 auto 30px;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}

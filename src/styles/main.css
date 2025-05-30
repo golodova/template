@@ -1,0 +1,541 @@
+/* Базовые стили */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Верхний хедер */
+.top-header {
+  background-color: #000;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hot-section {
+  margin-bottom: 80px; /* Увеличиваем отступ снизу (было 50px) */
+}
+
+.tracks-section {
+  margin-top: 40px; /* Добавляем отступ сверху */
+}
+
+.player-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.player-icon {
+  color: #888;
+  font-size: 18px;
+}
+
+.logo {
+  color: #d51007;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-icon {
+  color: #888;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Основное содержимое */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.main-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.red-line {
+  height: 3px;
+  background-color: #d51007;
+  width: 150px;
+  margin: 0 auto 30px;
+}
+
+/* Сетка артистов */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.artist-item {
+  text-align: left;
+}
+
+.artist-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #eee;
+  margin-bottom: 15px;
+}
+
+.artist-name {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.artist-genre {
+  color: #888;
+  margin: 5px 0;
+}
+
+/* Сетка треков */
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.track-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px; /* Добавляем отступ между треками */
+}
+
+.track-square {
+  width: 80px;
+  height: 80px;
+  background-color: #eee;
+}
+
+.track-title {
+  font-weight: bold;
+  margin: 0 0 5px 0; /* Убираем верхний отступ, добавляем нижний */
+}
+
+.artist-name {
+  font-weight: normal; /* Убираем жирность */
+  margin: 0 0 5px 0;
+  color: #333; /* Черный цвет */
+}
+
+.track-plays {
+  color: #888;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Футер */
+.bottom-footer {
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.column-title {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/* Стили для страницы поиска */
+.search-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+#search-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #d51007;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-query {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 30px 0 20px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-nav {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.nav-item {
+  color: #333;
+  text-decoration: none;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.nav-item.active {
+  color: #d51007;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d51007;
+}
+
+.gray-line {
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Секция Artists */
+.section-heading {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 20px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.artists-grid, .albums-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.artist-card, .album-card {
+  position: relative;
+}
+
+.artist-image, .album-image {
+  width: 100%;
+  display: block;
+}
+
+.artist-image-container, .album-image-container {
+  position: relative;
+}
+
+.artist-image-container::after, .album-image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.artist-info, .album-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1;
+  color: white;
+}
+
+.artist-name, .album-title {
+  font-weight: bold;
+  margin: 0;
+  color:#ddd
+}
+
+.artist-type, .album-artist {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+/* Секция Tracks */
+.tracks-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.play-button {
+  background: none;
+  border: none;
+  font-size: 12px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.track-thumbnail {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #888;
+}
+
+.like-button.liked {
+  color: #d51007;
+}
+
+.track-main-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.track-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.track-secondary-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.track-artist {
+  margin: 0;
+  color: #333;
+}
+
+.track-duration {
+  margin: 0;
+  color: #888;
+  width: 50px;
+  text-align: right;
+}
+
+.track-divider {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background-color: #eee;
+}
+
+/* Стили только для страницы поиска */
+.results-section {
+  margin-top: 60px !important; /* Большой отступ сверху */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading {
+  margin: 0 0 20px 20px !important;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+/* Фикс для картинок */
+.artist-image, .album-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.artists-grid, .albums-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 0 !important;
+}
+
+/* Стили для загрузки и ошибок */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  grid-column: 1 / -1;
+}
+
+.no-results {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  grid-column: 1 / -1;
+}
+
+/* Анимация загрузки */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  border-top-color: #d51007;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+  .artists-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .tracks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .artists-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .tracks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .artists-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .search-container {
+    flex-direction: column;
+  }
+  
+  #search-input {
+    margin-bottom: 10px;
+  }
+}
+
+/* Гарантируем, что изображения будут отображаться правильно */
+.artist-image, .album-image, .track-thumbnail, 
+.artist-circle, .track-square {
+  object-fit: cover;
+  background-color: #eee; /* Фон для прозрачных изображений */
+}
+
+
+.artist-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.track-square {
+  width: 80px;
+  height: 80px;
+}
+
+.artist-image, .album-image {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-block {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

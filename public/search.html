@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search - last.fm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Верхняя черная полоса -->
+  <header class="top-header">
+    <div class="header-content">
+      <div class="player-icons">
+        <span class="player-icon">▶</span>
+        <span class="player-icon">⏸</span>
+        <span class="player-icon">⏹</span>
+      </div>
+      <div class="logo">last.fm</div>
+      <nav class="main-nav">
+        <span class="nav-icon">🔍</span>
+         <a href="https://www.last.fm/home" class="nav-link">Home</a>
+        <a href="https://www.last.fm/dashboard" class="nav-link">Live</a>
+        <a href="https://www.last.fm/music" class="nav-link">Music</a>
+        <a href="https://www.last.fm/charts" class="nav-link">Charts</a>
+        <a href="https://www.last.fm/events" class="nav-link">Events</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Строка поиска -->
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for artists, albums, tracks...">
+    <button id="search-button">Search</button>
+  </div>
+
+  <!-- Контент после поиска (изначально скрыт) -->
+  <div id="search-results" class="hidden">
+    <h1 class="search-query">Search results for "<span id="search-query-text"></span>"</h1>
+    
+    <!-- Меню навигации по результатам -->
+    <nav class="results-nav">
+      <a href="#top-results" class="nav-item active">Top Results</a>
+      <a href="#artists" class="nav-item">Artists</a>
+      <a href="#albums" class="nav-item">Albums</a>
+      <a href="#tracks" class="nav-item">Tracks</a>
+    </nav>
+    <div class="gray-line"></div>
+    
+    <!-- Секция Artists -->
+    <section id="artists" class="results-section">
+      <h2 class="section-heading">Artists</h2>
+      <div class="artists-grid">
+        <!-- 8 артистов -->
+        <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+                <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+                <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+                <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+                <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+                <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+                <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+                <div class="artist-card">
+          <div class="artist-image-container">
+            <img src="images/jhope.webp" alt="Artist" class="artist-image">
+            <div class="artist-info">
+              <p class="artist-name">j-hope</p>
+              <p class="artist-type">379 listeners</p>
+            </div>
+          </div>
+        </div>
+        <!-- Повторить 7 раз -->
+      </div>
+    </section>
+    
+    <!-- Секция Albums -->
+    <section id="albums" class="results-section">
+      <h2 class="section-heading">Albums</h2>
+      <div class="albums-grid">
+        <!-- 8 альбомов -->
+        <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+                <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+                <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+                <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+                <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+                <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+                <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+                <div class="album-card">
+          <div class="album-image-container">
+            <img src="images/more.jpg" alt="Album" class="album-image">
+            <div class="album-info">
+              <p class="album-title">MORE</p>
+              <p class="album-artist">j-hope</p>
+            </div>
+          </div>
+        </div>
+        <!-- Повторить 7 раз -->
+      </div>
+    </section>
+    
+    <!-- Секция Tracks -->
+    <section id="tracks" class="results-section">
+      <h2 class="section-heading">Tracks</h2>
+      <div class="tracks-list">
+        <!-- 10 треков -->
+        <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+                <div class="track-item">
+          <button class="play-button">▶</button>
+          <img src="images/more.jpg" alt="Track" class="track-thumbnail">
+          <button class="like-button">♡</button>
+          <div class="track-main-info">
+            <p class="track-title">MORE</p>
+          </div>
+          <div class="track-secondary-info">
+            <p class="track-artist">j-hope</p>
+            <p class="track-duration">3:45</p>
+          </div>
+          <div class="track-divider"></div>
+        </div>
+        <!-- Повторить 9 раз -->
+      </div>
+    </section>
+  </div>
+
+
+    <!-- Нижняя черная полоса -->
+  <footer class="bottom-footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <p class="column-title">COMPANY</p>
+        <a href="https://www.last.fm/about" class="footer-link">About Last.fm</a>
+        <a href="https://www.last.fm/about/contact" class="footer-link">Contact Us</a>
+        <a href="https://www.last.fm/about/jobs" class="footer-link">Jobs</a>
+      </div>
+        <div class="footer-column">
+        <p class="column-title">HELP</p>
+        <a href="https://www.last.fm/about/trackmymusic" class="footer-link">Track My music</a>
+        <a href="https://support.last.fm/" class="footer-link">Community Support</a>
+        <a href="https://cbsi.my.salesforce-sites.com/lastfm/knowledgehome_lfm?referer=lastfm.com" class="footer-link">Help</a>
+      </div>
+        <div class="footer-column">
+        <p class="column-title">GOODIES</p>
+        <a href="https://www.last.fm/about/trackmymusic" class="footer-link">Download Scrobbler</a>
+        <a href="https://www.last.fm/api" class="footer-link">Developer API</a>
+        <a href="https://www.last.fm/music/+free-music-downloads" class="footer-link">Free Music Downloads</a>
+      </div>
+        <div class="footer-column">
+        <p class="column-title">ACCOUNT</p>
+        <a href="https://www.last.fm/inbox" class="footer-link">Inbox</a>
+        <a href="https://www.last.fm/settings" class="footer-link">Settings</a>
+        
+      </div>
+        <div class="footer-column">
+        <p class="column-title">FOLLOW US</p>
+        <a href="https://www.facebook.com/lastfm" class="footer-link">Facebook</a>
+        <a href="https://x.com/lastfm" class="footer-link">X</a>
+        <a href="https://www.instagram.com/last_fm" class="footer-link">Instagram</a>
+      </div>
+      <!-- Еще 4 колонки -->
+    </div>
+  </footer>
+
+
+  <script type="module" src="search.js"></script>
+</body>
+</html>

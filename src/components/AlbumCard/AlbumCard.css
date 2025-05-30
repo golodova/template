@@ -1,0 +1,15 @@
+.album-card {
+  transition: transform 0.2s;
+}
+
+.album-card:hover {
+  transform: scale(1.03);
+}
+
+.album-title {
+  transition: color 0.2s;
+}
+
+.album-card:hover .album-title {
+  color: #d51007;
+}
